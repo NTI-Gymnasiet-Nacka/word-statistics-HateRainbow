@@ -6,7 +6,7 @@
 # - Genomsnittlig ordlängd
 # Gör en funktion för varje.
 
-# Bonus, gör en i taget, skapa en funktion för varje:
+# Bonus, gör en ch taget, skapa en funktion för varje:
 # - Längsta och kortaste ordet - om det finns flera, bestäm själv om du skriver ut ett eller flera
 # - Räkna antalet unika ord (alltså ord som bara förekommer en gång)
 
@@ -36,11 +36,11 @@ def most_used_word(file_text: str) -> int:
     counter = 0
     characters = words_list[0]
 
-    for i in words_list:
-        curr_frequency = words_list.count(i)
+    for ch in words_list:
+        curr_frequency = words_list.count(ch)
         if curr_frequency > counter:
             counter = curr_frequency
-            characters = i
+            characters = ch
 
     return counter, characters
 
